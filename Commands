@@ -1,0 +1,14 @@
+# To get information about pods
+
+kubectl get pods
+
+kubectl describe pod *podName*
+
+# To get information about any resource (hpa, deployment, service, replicationController)
+ kubectl get resource
+ kubectl describe resource *resourceName*
+ 
+ # To create any yaml file
+ 
+  kubectl apply -f *filename*
+  

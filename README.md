@@ -39,6 +39,16 @@ kubectl describe pod pod
 - metrics [custom-metrics.yaml](https://github.com/vevsatechnologies/kubernetes-docker-centOS/blob/master/metrics/custom-metrics.yaml)
 
 
+## Check the HPA
+```
+kubectl describe hpa hpaName
+```
 
 ## Check the scaling using busy box
 
+```
+   kubectl run -i --tty load-generator --image=busybox /bin/sh
+   
+   while true; do wget -q -O- IPAddress:PortANumber; done
+  
+```

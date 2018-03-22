@@ -1,0 +1,19 @@
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-target
+  labels:
+    run: hello-target
+    name: hello-target
+    app: hello-target
+spec:
+  selector:
+    app: hello-target
+  type: NodePort
+  ports:
+  - port: 30001
+    targetPort: 3000
+    nodePort: 30001
+    protocol: TCP
+

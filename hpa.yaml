@@ -1,0 +1,14 @@
+apiVersion: autoscaling/v1
+kind: HorizontalPodAutoscaler
+metadata:
+  name: hpa2
+spec:
+  scaleTargetRef:
+    apiVersion: extensions/v1beta1
+    kind: Deployment
+    name: hello-target
+
+  minReplicas: 1
+  maxReplicas: 10
+  targetCPUUtilizationPercentage: 10
+

@@ -54,9 +54,7 @@ export KUBECONFIG=$HOME/admin.conf
 ```
 curl -sSL "https://github.com/coreos/flannel/blob/master/Documentation/kube-flannel.yml?raw=true" | kubectl --namespace=kube-system create -f -
 ```
-git clone "https://github.com/stefanprodan/k8s-prom-hpa.git"
-```
-cd k8s-prom-hpa
+
 
 kubectl create -f ./metrics-server
 ```

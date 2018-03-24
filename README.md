@@ -1,4 +1,4 @@
-# kubernetes-docker-centOS
+# Install-Kubernetes-on-CentOs
 
 ## Configure Master node
 

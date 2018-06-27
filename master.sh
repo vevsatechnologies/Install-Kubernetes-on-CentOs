@@ -40,7 +40,7 @@ systemctl enable kubelet && systemctl start kubelet
 
 ##Deploy the Master
 ```
-kubeadm init --pod-network-cidr=10.244.0.0/16 --apiserver-advertise-address MasterIP   
+kubeadm init --pod-network-cidr=10.244.0.0/16 --apiserver-advertise-address MasterIP --ignore-preflight-errors=all  
 ```
 Save the token somewhere as it will be used to join slave nodes to the master
 
